@@ -7,5 +7,7 @@ contoh sederhana penggunaan API dengan angular
 ## Development server
 
 Run `npm install`
+
 Run `ng serve` 
+
 Access to `http://localhost:4200/`
