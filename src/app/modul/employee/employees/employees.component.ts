@@ -23,15 +23,11 @@ export class EmployeesComponent implements OnInit {
   }
 
   reloadData(){
-    this.employees = this.employeeService.getEmployeesList();
-  }
-  
-  createEmployee(){
-    this.router.navigate(['add-employee']);
+    this.employees = this.employeeService.getEmployeesList(); 
   }
 
   updateEmployee(id: number) {
-    this.router.navigate(['update-employee',id]);
+    this.router.navigate(['employees/update-employee',id]); 
   }
 
   deleteEmployee(id: number) {
@@ -44,8 +40,8 @@ export class EmployeesComponent implements OnInit {
         error => console.log(error));
   }
 
-  employeeDetails(id: number){
-    this.router.navigate(['detail-employee', id]);
+  detailEmployee(id: number){
+    this.router.navigate(['employees/detail-employee', id]);
   }
 
 }

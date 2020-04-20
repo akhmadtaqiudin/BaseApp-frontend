@@ -74,6 +74,9 @@ body {
         text-align: center;
     }
     
+    .float-right{
+        margin: 10px auto;
+    }
     svg.material-icons {
     height: 24px;
     width: auto;

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Observable } from 'rxjs';
 import { Employee } from '../employee';
 import { EmployeeService } from '../employee.service';
 
@@ -14,7 +13,6 @@ export class UpdateEmployeeComponent implements OnInit {
   id: number;
   employee: Employee;
   submitted = false;
-  employees: Observable<Employee[]>;
 
   constructor(
     private employeeService: EmployeeService,
@@ -47,8 +45,8 @@ export class UpdateEmployeeComponent implements OnInit {
   }
 
   gotoList() {
-    this.employees = this.employeeService.getEmployeesList();
-    this.router.navigate(['/employees']);    
+    this.router.onSameUrlNavigation;
+    this.router.navigate(['/employees']); 
   }
 
 }

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { EmployeeRoutingModule } from './employee-routing.module';
 import { EmployeesComponent } from './employees/employees.component';
@@ -13,11 +15,13 @@ import { UpdateEmployeeComponent } from './update-employee/update-employee.compo
     EmployeesComponent,
     DetailEmployeeComponent,
     CreateEmployeeComponent,
-    UpdateEmployeeComponent
+    UpdateEmployeeComponent 
   ],
   imports: [
     CommonModule,
-    EmployeeRoutingModule
+    EmployeeRoutingModule,
+    FormsModule,
+    HttpClientModule
   ]
 })
 export class EmployeeModule { }
